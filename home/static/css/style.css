@@ -1,4 +1,11 @@
-body{
-    color: green;
-    background-color: black;
+.logoNAV{
+    width: 7%;
+    height: 7%;
+}
+.titulo{
+    font-size: 30px;
+}
+.content{
+    height: 92.3%;
+    width: 100%;
 }
