@@ -8,4 +8,14 @@
 .content{
     height: 92.3%;
     width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.prettyprint{
+    width: 50%;
+    background-color: #f7f7f9;
+    border:1px solid #e1e1e8;
+    padding: 5px;
 }
