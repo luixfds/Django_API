@@ -27,5 +27,5 @@ route.register(r'aliens', aliensviewset.aliensViewSet, basename='aliens')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='home'),
-    path('api/', include(route.urls))
+    path('api/', include(route.urls), name='aappii')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

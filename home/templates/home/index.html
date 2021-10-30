@@ -13,28 +13,44 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home' %}">
-          <img class="logoNAV" src="{% static 'imgs/site/omin.png' %}">
-            <strong class="titulo">Ben10</strong>
-            <em><sup class="subtitulo">API</sup></em>
+        <a class="navbar-brand header"">
+            <div class="header-rigth">
+                <img class="logoNAV" src="{% static 'imgs/site/omin.png' %}">
+                <strong class="titulo">Ben10</strong>
+                <em><sup class="subtitulo">API</sup></em>
+            </div>
+            <div class="bolinhas">
+                <div class="spinner-grow text-success bola" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success bola" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success bola" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
         </a>
       </div>
     </nav>
     <div class="content">
-        <h1>BEN10</h1>
-        <h2>Django-Rest-API</h2>
-        <pre class="prettyprint">oioi</pre>
+        <div class="titulo-container">
+            <h1><strong>BEN10</strong></h1>
+            <h3>Django-Rest-API</h3>
+        </div>
 
-        <div class="bolinhas">
-            <div class="spinner-grow text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            <div class="spinner-grow text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            <div class="spinner-grow text-success" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
+        <div class="content-api">
+            <h5>Para Acessar a API basta acrescentar a url: </h5>
+            <pre class="prettyprint">'/api/'</pre>
+        </div>
+        <div class="content-api">
+            <h5>Para Acessar os aliens cadastrados basta acrescentar a url: </h5>
+            <pre class="prettyprint">'/api/aliens/'</pre>
+        </div>
+        <div class="content-api">
+            <h5>Para Acessar um alien em especifico basta acrescentar a url: </h5>
+            <pre class="prettyprint">'/api/aliens/1/'</pre>
+            <i>No qual '1' é o ID do Alien</i>
         </div>
 
     </div>
